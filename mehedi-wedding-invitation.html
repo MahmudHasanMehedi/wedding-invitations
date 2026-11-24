@@ -44,7 +44,8 @@ a:focus-visible{outline:3px solid var(--g);outline-offset:3px}
 .card::before,.card::after{content:"";position:absolute;pointer-events:none}
 .card::before{inset:.65rem;border:1px solid var(--g);animation:frameIn 1.5s cubic-bezier(.2,.7,.2,1) .15s both}
 .card::after{inset:.9rem;border:1px solid var(--line);animation:frameIn 1.5s cubic-bezier(.2,.7,.2,1) .35s both}
-.block{margin-top:2.75rem;padding-top:2.75rem;border-top:1px solid var(--line)}
+.block{position:relative;margin-top:3.75rem;padding-top:3.5rem;border-top:1px solid rgba(43,90,71,.55)}
+.block::before{content:"";position:absolute;top:-.45rem;left:50%;width:.8rem;height:.8rem;margin-left:-.4rem;background:var(--paper);border:1px solid var(--g);transform:rotate(45deg)}
 
 /* Invitation header */
 .sprig{display:block;width:3rem;height:auto;color:var(--g);margin:0 auto 1.5rem;transform-origin:50% 100%;animation:rise .9s cubic-bezier(.2,.7,.2,1) .2s both,sway 10s ease-in-out 3.6s infinite}
